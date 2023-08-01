@@ -51,22 +51,16 @@ void TicTacToe :: start()
     };
 };
 
-void TicTacToe :: print_board()
-{
-    for (int i = 0; i < 9; i++)
-    {
-        if (i == 1 || i == 2 || i == 4 || i == 5 || i == 7 || i == 8)
-        {
-            std::cout << " | ";
-        }
-        std::cout << board[i];
-        if (i == 2 || i == 5)
-        {
-            std::cout << std::endl;
-            std::cout << "---------" << std::endl;
-        }
-    }
+
+  void TicTacToe::print_board() {
+     std:: cout<<"at this stage of game we have board"<<std::endl;
+    std::cout << " " << board[0] << " | " << board[1] << " | " << board[2] << std::endl;
+    std::cout << "-----------" << std::endl;
+    std::cout << " " << board[3] << " | " << board[4] << " | " << board[5] << std::endl;
+    std::cout << "-----------" << std::endl;
+    std::cout << " " << board[6] << " | " << board[7] << " | " << board[8] << std::endl;
     std::cout << std::endl;
+
 };
 
 int TicTacToe :: play_move(int index, char move)
